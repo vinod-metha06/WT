@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<button style="margin: 30px;;" onclick="reverseNumber()">Click here to enter the number:-</button>
+
+<p id="display"></p>
+
+<script>
+function reverseNumber() {
+  var num = parseInt(prompt("Please enter the number"));
+  var reverse = 0;
+
+  if (isNaN(num)) {
+    alert("Enter Numeric value only");
+  } else {
+    while(num > 0)
+    {
+        var digit = num % 10;
+        reverse = (reverse * 10) + digit;
+        num = parseInt(num / 10);
+    }
+    alert(reverse);
+  }
+  
+ 
+ 
+}
+
+</script>
+
+</body>
+</html>
